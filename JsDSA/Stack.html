@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stack of Array</title>
+    <script>
+        let data = []
+        let currentsize = data.length
+        function Push(){
+          let newval = document.getElementById("newval").value;
+          data[currentsize]=newval;
+          currentsize += 1;
+          console.log("value added")
+          document.getElementById("newval").value="";
+
+        }
+        function Pop(){
+         if(currentsize>0){
+            currentsize -=1
+            data.length = currentsize
+            console.log("last value of array removed")
+         }
+        }
+        function display(){
+          for(let i=0; i<currentsize-1;i++){
+            console.log(`value index is ${i} and the value added is ${data[i]} `)
+          }
+        }
+    </script>
+</head>
+<body>
+    <h1>Stack(push and pop) of array</h1>
+    <input type="text" id="newval" placeholder="enter value here" />
+    <button onclick="Push()">push</button>
+    <button onclick="Pop()">pop</button>
+    <button onclick="display()">display in console</button>
+
+
+</body>
+</html>
