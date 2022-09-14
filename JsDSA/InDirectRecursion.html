@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>InDirect Recursion</title>
+    <script>
+        let money = 200;
+        let TotalFruits =0;
+        const BuyOrange = (x)=>{
+            if(x>0){
+                let s = x-10
+                console.log(`I have bought ${TotalFruits} oranges and remaining amount ${s}`)
+              BuyMore(s)
+            }
+            else{
+                console.log(`I don't have much money, ${TotalFruits} oranges brought`)
+            }
+        }
+        const BuyMore = (x)=>{
+            TotalFruits++
+            BuyOrange(x-5)
+        }
+        BuyOrange(money)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

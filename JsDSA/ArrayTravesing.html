@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array Travesring</title>
+    <script>
+        let data = [2,43,22,33,56,12,76,89,7,9,3,44];
+        function getElements(){
+            let el = document.getElementById("element").value;
+            if(el<data.length && typeof parseInt(el) === "number"){
+                alert(data[el])
+            }else{
+                alert("please enter a valid value")
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="element" >
+    <button onclick="getElements()">Submit</button>
+</body>
+</html>

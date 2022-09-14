@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array Search</title>
+     <script>
+        let arr =[12,45,86,43,23,80,64]
+        let indexof= undefined;
+        let valuearr= undefined;
+        function SearchValue(){
+            let arrvalue = document.getElementById('val').value;
+            for(i=0; i<=arr.length-1; i++){
+                if(arr[i]===parseInt(arrvalue)){
+                    indexof=i 
+                    valuearr=arr[i]
+                    break
+                }
+            }
+            if(indexof !== undefined ){
+                alert(`position of array is ${indexof} and value is ${valuearr}`);
+            }else{
+                alert("Please enter the value present in array")
+            }
+            
+        }
+     </script>
+</head>
+<body>
+    <input type="text" id="val" placeholder="enter the value"/>
+    <button onclick="SearchValue()">Search value</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Push An Element in Array</title>
+    <script>
+        let data = [];
+        let currentsize = data.length
+        let id= document.getElementById("stack")
+        
+        function push(newval){
+         data[currentsize] = newval
+         currentsize +=1;
+        }
+        push(30)
+        push(20)
+        push(40)
+        push(43)
+        console.log(data)
+    </script>
+</head>
+<body>
+    <h1>Push An Element in Array</h1>
+    <div id="stack"></div>
+</body>
+</html>

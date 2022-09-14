@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recurrsion Array Reverse</title>
+    <script>
+        let arr = [4,23,5,6,2,24,8,76,43,21,2322]
+        let temporary = []
+        function ArrayReverse(data,start,last){
+            console.log(data) //[2322, 21, 43, 76, 8, 24, 2, 6, 5, 23, 4]
+           if(start<last){
+             temporary = arr[start]
+             arr[start]=arr[last]
+             arr[last]=temporary
+             ArrayReverse(data,start+1,last-1)
+           } 
+        }
+        ArrayReverse(arr,0,arr.length-1)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

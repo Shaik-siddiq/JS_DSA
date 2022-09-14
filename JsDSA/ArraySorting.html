@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array Sorting</title>
+    <script>
+        let sorting =[22,2,21,12,09,7,32,43,2,11,10,5,3];
+
+        for(let i=0; i<sorting.length; i++){
+        console.log(i)
+            for(let j=0; j<sorting.length;j++){
+                console.log(j)
+                if(sorting[j]>sorting[j+1]){
+                    let temp=sorting[j]
+                    sorting[j]=sorting[j+1]
+                    sorting[j+1]=temp
+                    console.log(temp)
+                }
+            }
+            console.log(sorting)
+        } 
+        console.log(sorting)
+    </script>
+</head>
+<body>
+    <h1>Array Sorting</h1>
+</body>
+</html>
